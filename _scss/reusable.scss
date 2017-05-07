@@ -1,0 +1,228 @@
+/*:::::::::::::::::::::::::::::
+::::::::::TEXT STYLES::::::::::
+::::::::::::::::::::::::::::::*/
+
+.subtitle{
+  font-size: 12px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 20px;
+  letter-spacing: 12px;
+  color: #26ADB3;
+  text-transform: uppercase;
+  margin: 0 auto 40px;
+}
+.title{
+  font-family: 'Montserrat';
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 60px;
+  letter-spacing: 1px;
+  color: #181818;
+  text-transform: uppercase;
+  margin: 0 auto 40px;
+}
+.title-variant{
+  font-family: 'Montserrat';
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 50px;
+  letter-spacing: 1px;
+  color: #181818;
+  text-transform: uppercase;
+  margin: 0 auto 40px;
+}
+.text{
+  font-size: 18px;
+  text-align: justify;
+  line-height: 28px;
+  color: #4a4a4a;
+}
+
+@media (max-width: 768px) {
+  .text{
+    font-size: 14px;
+    line-height: 22px;
+  }
+}
+@media (max-width: 640px) {
+  .subtitle{
+    font-size: 10px;
+    margin: 0 auto 10px;
+  }
+  .title{
+    font-size: 40px;
+    margin: 0 auto 20px;
+  }
+  .title-variant{
+    font-size: 20px;
+    line-height: 40px;
+  }
+}
+
+/*:::::::::::::::::::::::::::::
+::::::::::TABS LAYOUT::::::::::
+::::::::::::::::::::::::::::::*/
+@keyframes fade-in{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.tabs-navigation{
+  background: #202125;
+  width: 100%;
+  padding: 0 5%;
+  margin-bottom: 20px;
+  ul{
+    width: 100%;
+    text-align: center;
+    li{
+      display: inline-block;
+      margin-right: -4px;
+      &:last-child{
+        margin-right: 0;
+      }
+      a{
+        text-transform: uppercase;
+        font-size: .8rem;
+        font-weight: bold;
+        letter-spacing: 1px;
+        color: white;
+        padding: 15px 25px;
+        display: block;
+        transition: all .3s ease;
+        &.selected{
+          background: #181818;
+          color: #0483b3;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 640px) {
+  .tabs-navigation{
+    padding: 0;
+    ul li{
+      display: block;
+      margin: 0;
+    }
+  }
+}
+
+.tabs-content{
+  width: 100%;
+  padding: 0 5%;
+  min-height: 100%;
+  margin: 50px auto;
+  position: relative;
+  > li{
+    display: none;
+    position: relative;
+    min-height: 100%;
+    overflow: hidden;
+    width: 100%;
+    &.selected {
+      display: block;
+      animation: fade-in 0.5s;
+    }
+  }
+}
+
+.item-container{
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  .item{
+    width: 30%;
+    position: relative;
+    margin: 0 1.5% 20px;
+    cursor: pointer;
+    &--tag{
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      opacity: 0;
+      transition: opacity .3s ease;
+      span{
+        padding: 5px 10px 3px;
+        font-size: 9px;
+        font-weight: 900;
+        border-radius: 11px;
+        background-color: #181818;
+        text-transform: uppercase;
+        display: block;
+        color: #0483b3;
+      }
+    }
+    &--description{
+      position: absolute;
+      z-index: 1;
+      left: 30px;
+      right: 30px;
+      bottom: 10px;
+      .description-title{
+        color: white;
+        font-weight: 800;
+        margin-bottom: 10px;
+      }
+      .description-cta{
+        font-size: .95rem;
+        color: #0483b3;
+        margin-bottom: 10px;
+      }
+    }
+    &--overlay{
+      background-color: rgba(black, .5);
+      background: linear-gradient(to bottom, rgba(black,0) 0%, rgba(black,.8) 100%);
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    &--image{
+      width: 100%;
+      height: 250px;
+      img{
+        width: 100%;
+        height: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+    }
+    &:hover{
+      .item--tag{
+        opacity: 1;
+      }
+    }
+  }
+  .item-double{
+    width: 47%;
+  }
+}
+@media (max-width: 1024px) {
+  .item-container{
+    .item{
+      width: 47%;
+    }
+  }
+}
+@media (max-width: 640px) {
+  .item-container{
+    .item{
+      width: 97%;
+    }
+  }
+}
+.wrapper{
+  width: 100%;
+  padding: 0 5%;
+  margin: 50px auto;
+  position: relative;
+}
