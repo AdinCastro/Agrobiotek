@@ -685,6 +685,7 @@ header {
     display: block;
     position: absolute;
     top: 0;
+    right: 5%;
     width: 100%;
     text-align: right; }
     header .desktop-nav ul {
