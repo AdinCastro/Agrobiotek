@@ -812,17 +812,6 @@ header {
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
       text-align: center; }
-      .hero .hero-inner .hero-image-logo img {
-        max-width: 100%; }
-      .hero .hero-inner .hero-image-logo ul {
-        max-width: 523px;
-        margin: 0 auto;
-        margin-top: 20px; }
-        .hero .hero-inner .hero-image-logo ul li {
-          width: 19%;
-          display: inline-block; }
-          .hero .hero-inner .hero-image-logo ul li img {
-            max-width: 90%; }
 
 @media (max-width: 768px) {
   .hero #video-background {
