@@ -20,18 +20,37 @@
 }
 .unslider-nav ol li {
   display: inline-block;
-  width: 10px;
-  height: 10px;
+  width: 30px;
+  height: 30px;
   margin: 0 10px;
   background: transparent;
   border-radius: 50%;
   overflow: hidden;
   text-indent: -999em;
-  border: 2px solid #fff;
   cursor: pointer;
+}
+.unslider-nav ol li:first-child {
+  background: url("../img/flags/honduras.png")center center;
+  background-size: cover;
+}
+.unslider-nav ol li:nth-child(2) {
+  background: url("../img/flags/guatemala.png")center center;
+  background-size: cover;
+}
+.unslider-nav ol li:nth-child(3) {
+  background: url("../img/flags/elsalvador.png")center center;
+  background-size: cover;
+}
+.unslider-nav ol li:nth-child(4) {
+  background: url("../img/flags/nicaragua.png")center center;
+  background-size: cover;
+}
+.unslider-nav ol li:last-child {
+  background: url("../img/flags/dominicana.png")center center;
+  background-size: cover;
 }
 
 .unslider-nav ol li.unslider-active {
-  background: #fff;
   cursor: default;
+  opacity: .3;
 }
