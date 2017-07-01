@@ -25,17 +25,18 @@ html, body {
   line-height: 2em;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
   margin: 0;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #333;
   line-height: 1.735; }
 
+html {
+  box-sizing: border-box;
+}
 *, *:before, *:after {
-  content: '';
-  box-sizing: inherit; }
-
+  box-sizing: inherit;
+}
 ul {
   list-style-type: none;
   padding: 0;
