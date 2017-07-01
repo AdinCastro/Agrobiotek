@@ -805,14 +805,14 @@ header {
     top: 0;
     left: 0; }
     .hero .hero-inner .hero-image-logo {
-      width: 50%;
+      width: 640px;
+      height: 332px;
       position: absolute;
       margin: 0 auto;
       top: 50%;
       left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
-      text-align: center; }
+      transform: translate(-50%, -50%);
+    }
 
 @media (max-width: 768px) {
   .hero #video-background {
