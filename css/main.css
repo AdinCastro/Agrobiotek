@@ -1126,6 +1126,8 @@ header {
       .contact-directions .row-direction .column-direction .block {
         margin: 20px 0;
         padding: 0 20px; }
+      .contact-directions .row-direction .column-direction .inline {
+        display: inline-block;}
         .contact-directions .row-direction .column-direction .block h4 {
           color: white;
           text-transform: uppercase; }
