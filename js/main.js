@@ -102,6 +102,7 @@
         body.addClass('fixed');
       });
     });
+    console.log('click')
   })
 
   modalClose.on('click','a', function(e){
