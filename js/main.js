@@ -102,7 +102,7 @@
         body.addClass('fixed');
       });
     });
-    console.log('click')
+    console.log(modalID)
   })
 
   modalClose.on('click','a', function(e){
